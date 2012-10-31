@@ -1,8 +1,8 @@
 # Git Basics #
 
-If you can read only one chapter to get going with Git, this is it. This chapter covers every basic command you need to do the vast majority of the things you’ll eventually spend your time doing with Git. By the end of the chapter, you should be able to configure and initialize a repository, begin and stop tracking files, and stage and commit changes. We’ll also show you how to set up Git to ignore certain files and file patterns, how to undo mistakes quickly and easily, how to browse the history of your project and view changes between commits, and how to push and pull from remote repositories.
+Git öğrenmek için tek bir bölüm okumanız gerekiyorsa doğru bölümdesiniz. Bu bölümde Git ile yapacağınız birçok temel işlemi öğreneceksiniz. Bölümün sonunda bir depo yaratacak ve ayarlarını değiştirebilecek, belgelerin git ile yönetilip yönetilmemesini sağlayacak, yaptığınız değişiklikleri commit veya stage edebileceksiniz. Size ayrıca bazı belgelerin git ile değişiklik geçmişinin tutulmasını nasıl engelleyeceğinizi göstereceğiz, değişiklikler nasıl kolayca ve hızlıca geri alabileceğinizi, projenin değişiklik geçmişini ve commitler arasındaki farklar nasıl inceleyebileceğinizi ve projenizi sunucuya nasıl göndereceğinizi ve sunucudan nasıl alacağınızı öğreneceksiniz.
 
-## Getting a Git Repository ##
+## Projeyi Git Deposundan Çekmek ##
 
 You can get a Git project using two main approaches. The first takes an existing project or directory and imports it into Git. The second clones an existing Git repository from another server.
 
