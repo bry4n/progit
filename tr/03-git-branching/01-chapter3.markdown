@@ -1,12 +1,12 @@
-# Git Branching #
+# Git Dal Oluşturma #
 
-Nearly every VCS has some form of branching support. Branching means you diverge from the main line of development and continue to do work without messing with that main line. In many VCS tools, this is a somewhat expensive process, often requiring you to create a new copy of your source code directory, which can take a long time for large projects.
+Hemen hemen tüm versiyon kontrol sistemleri dallanma özelliğine sahiptir. Dal oluşturmak projenin ilerlediği ana çizgiden saparak yeni bir çizgide geliştirme yapmaya devam etmek anlamına gelmektedir. Birçok versiyon kontrol sisteminde dal oluşturmak maliyetli bir işlemdir ve çoğu zaman kaynak kodun yeni bir kopyasının bulunduğu bir dizin oluşturmayı gerektirir, büyük projeler için bu oldukça uzun zaman alan bir işlem olabilmektedir.
 
-Some people refer to the branching model in Git as its “killer feature,” and it certainly sets Git apart in the VCS community. Why is it so special? The way Git branches is incredibly lightweight, making branching operations nearly instantaneous and switching back and forth between branches generally just as fast. Unlike many other VCSs, Git encourages a workflow that branches and merges often, even multiple times in a day. Understanding and mastering this feature gives you a powerful and unique tool and can literally change the way that you develop.
+Birçok insan Git'in sahip olduğu dal oluşturma özelliğini Git'in "öldürücü özelliği" olarak tanımlamaktadır ve bu Giti diğer versiyon kontrol sistemlerinden farklı kılar. Neden bu özellik bu kadar özel? Git'in dal oluşturma yöntemi oldukça sadedir, dallandırma işlemleri neredeyse anlık denecek kadar hızlı yapılmaktadır ve dallar arasında çok hızlı bir şekilde geçişler yapılabilmektedir. Birçok diğer versiyon kontrol sisteminin aksine, Git rahat bir şekilde dal oluşturma ve dal birleştirme işlemlerini kolayca yapabilen esnek bir yapıya sahiptir,bu işlemler günde birkaç kez tekrarlanabilecek kadar rahattır. Bu konuyu anlamak ve bu konuda uzmanlaşmak size, geliştirme şeklinizi tamamen değiştiren benzersiz bir araç sunacaktır.
 
-## What a Branch Is ##
+## Dal Nedir? ##
 
-To really understand the way Git does branching, we need to take a step back and examine how Git stores its data. As you may remember from Chapter 1, Git doesn’t store data as a series of changesets or deltas, but instead as a series of snapshots.
+Git'in dal oluşturma işlemini nasıl yaptığını gerçek anlamda anlamak için biraz geriye gidereg Git'in verileri saklama biçimini incelememiz gerekir. Birinci bölümden hatırlayacağınız üzere, Git verileri revizyonlar şeklinde saklamaz, bunun yerine verilerin o anki görüntüsünü tutar.
 
 When you commit in Git, Git stores a commit object that contains a pointer to the snapshot of the content you staged, the author and message metadata, and zero or more pointers to the commit or commits that were the direct parents of this commit: zero parents for the first commit, one parent for a normal commit, and multiple parents for a commit that results from a merge of two or more branches.
 
