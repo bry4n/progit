@@ -4,9 +4,9 @@ Hemen hemen tüm versiyon kontrol sistemleri dallanma özelliğine sahiptir. Dal
 
 Birçok insan Git'in sahip olduğu dal oluşturma özelliğini Git'in "öldürücü özelliği" olarak tanımlamaktadır ve bu Giti diğer versiyon kontrol sistemlerinden farklı kılar. Neden bu özellik bu kadar özel? Git'in dal oluşturma yöntemi oldukça sadedir, dallandırma işlemleri neredeyse anlık denecek kadar hızlı yapılmaktadır ve dallar arasında çok hızlı bir şekilde geçişler yapılabilmektedir. Birçok diğer versiyon kontrol sisteminin aksine, Git rahat bir şekilde dal oluşturma ve dal birleştirme işlemlerini kolayca yapabilen esnek bir yapıya sahiptir,bu işlemler günde birkaç kez tekrarlanabilecek kadar rahattır. Bu konuyu anlamak ve bu konuda uzmanlaşmak size, geliştirme şeklinizi tamamen değiştiren benzersiz bir araç sunacaktır.
 
-## What a Branch Is ##
+## Dal Nedir? ##
 
-To really understand the way Git does branching, we need to take a step back and examine how Git stores its data. As you may remember from Chapter 1, Git doesn’t store data as a series of changesets or deltas, but instead as a series of snapshots.
+Git'in dal oluşturma işlemini nasıl yaptığını gerçek anlamda anlamak için biraz geriye gidereg Git'in verileri saklama biçimini incelememiz gerekir. Birinci bölümden hatırlayacağınız üzere, Git verileri revizyonlar şeklinde saklamaz, bunun yerine verilerin o anki görüntüsünü tutar.
 
 When you commit in Git, Git stores a commit object that contains a pointer to the snapshot of the content you staged, the author and message metadata, and zero or more pointers to the commit or commits that were the direct parents of this commit: zero parents for the first commit, one parent for a normal commit, and multiple parents for a commit that results from a merge of two or more branches.
 
