@@ -1,8 +1,8 @@
-# Git Dallandırma #
+# Git Dal Oluşturma #
 
 Hemen hemen tüm versiyon kontrol sistemleri dallanma özelliğine sahiptir. Dal oluşturmak projenin ilerlediği ana çizgiden saparak yeni bir çizgide geliştirme yapmaya devam etmek anlamına gelmektedir. Birçok versiyon kontrol sisteminde dal oluşturmak maliyetli bir işlemdir ve çoğu zaman kaynak kodun yeni bir kopyasının bulunduğu bir dizin oluşturmayı gerektirir, büyük projeler için bu oldukça uzun zaman alan bir işlem olabilmektedir.
 
-Some people refer to the branching model in Git as its “killer feature,” and it certainly sets Git apart in the VCS community. Why is it so special? The way Git branches is incredibly lightweight, making branching operations nearly instantaneous and switching back and forth between branches generally just as fast. Unlike many other VCSs, Git encourages a workflow that branches and merges often, even multiple times in a day. Understanding and mastering this feature gives you a powerful and unique tool and can literally change the way that you develop.
+Birçok insan Git'in sahip olduğu dal oluşturma özelliğini Git'in "öldürücü özelliği" olarak tanımlamaktadır ve bu Giti diğer versiyon kontrol sistemlerinden farklı kılar. Neden bu özellik bu kadar özel? Git'in dal oluşturma yöntemi oldukça sadedir, dallandırma işlemleri neredeyse anlık denecek kadar hızlı yapılmaktadır ve dallar arasında çok hızlı bir şekilde geçişler yapılabilmektedir. Birçok diğer versiyon kontrol sisteminin aksine, Git rahat bir şekilde dal oluşturma ve dal birleştirme işlemlerini kolayca yapabilen esnek bir yapıya sahiptir,bu işlemler günde birkaç kez tekrarlanabilecek kadar rahattır. Bu konuyu anlamak ve bu konuda uzmanlaşmak size, geliştirme şeklinizi tamamen değiştiren benzersiz bir araç sunacaktır.
 
 ## What a Branch Is ##
 
